@@ -1,0 +1,48 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 99.83     23.89    23.89                             hue_average(float const*, int)
+  0.13     23.92     0.03        2    15.00    15.00  Grid::Grid(int, int)
+  0.04     23.93     0.01                             _init
+  0.00     23.93     0.00        7     0.00     0.00  pick_group_hue(int)
+  0.00     23.93     0.00        2     0.00     0.00  Grid::~Grid()
+  0.00     23.93     0.00        2     0.00     0.00  std::vector<float, std::allocator<float> >::operator=(std::vector<float, std::allocator<float> > const&)
+  0.00     23.93     0.00        2     0.00     0.00  std::vector<unsigned char, std::allocator<unsigned char> >::operator=(std::vector<unsigned char, std::allocator<unsigned char> > const&)
+  0.00     23.93     0.00        1     0.00     0.00  initialize_grid(Grid&)
+  0.00     23.93     0.00        1     0.00     0.00  simulate_parallel(Grid&)
+  0.00     23.93     0.00        1     0.00     0.00  write_grid_to_file(Grid const&, char const*)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
